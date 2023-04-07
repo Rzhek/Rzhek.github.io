@@ -1,4 +1,3 @@
-
 /* Color vars */
 
 :root {
@@ -19,15 +18,24 @@
     margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
 }
 
-.p {
+p {
     display: inline-block;
     line-height: 36px;
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }
 
 .section {
@@ -129,11 +137,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-elem {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+.nav-link {
     font-size: 24px;
     line-height: 1em;
     font-weight: 600;
-    margin-right: 50px;
-    display: inline-block;
+    color: inherit;
 }
 
 .nav-elem_active {
@@ -242,4 +254,57 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-text {
     line-height: 36px;
+}
+
+/* Activities */
+
+.activity-block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-block:not(:last-child) {
+    margin-bottom: 90px;
+}
+
+.activity-block-left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.activity-block-left.activity-block-text {
+    padding-right: 70px;
+}
+
+.activity-block-right {
+    width: 50%;
+}
+
+.activity-block-right.activity-block-text {
+    padding-left: 70px;
+}
+
+.activity-title {
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.activity-description {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.activity-block-img img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 100%;
+    border-radius: 25px;
+    transition: .3s ease-in-out;
+}
+
+.activity-block-img img:hover {
+    transform: translateY(-5px);
 }
