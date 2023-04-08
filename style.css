@@ -57,33 +57,42 @@ a {
 
 .btn {
     display: inline-block;
-    padding: 20px 0;
+    padding: 20px 30px;
     font-weight: 700;
     text-align: center;
     line-height: 1em;
     border-radius: 15px;
     text-decoration: none;
+    transition: .3s ease-in-out;
 }
 
 .btn_orange {
     background-color: var(--orange);
 }
 
+.btn_orange:hover {
+    background-color: #ff7b1d;
+}
+
 .btn_blue {
     background-color: var(--blue);
 }
 
+.btn_blue:hover {
+    background-color: #41a3ff;
+}
 
 .page-title-block {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     text-align: center;
 }
 
 .page-title {
-    font-size: 60px;
+    font-size: 72px;
     line-height: 120px;
     font-weight: 600;
+    text-align: center;
 }
 
 .page-subtitle {
@@ -140,6 +149,15 @@ a {
 .nav-elem {
     margin-right: 50px;
     display: inline-block;
+    transition: .3s ease-in-out;
+}
+
+.nav-elem_active {
+    color: var(--blue);
+}
+
+.nav-elem:hover {
+    color: var(--orange);
 }
 
 .nav-link {
@@ -147,10 +165,6 @@ a {
     line-height: 1em;
     font-weight: 600;
     color: inherit;
-}
-
-.nav-elem_active {
-    color: var(--blue);
 }
 
 .menu-icon {
@@ -238,13 +252,17 @@ a {
 .header-buttons {
     display: flex;
     justify-content: space-between;
-
+    
 }
 
 .header-button {
     max-width: 50%;
     min-width: 47%;
     display: block;
+}
+
+.header-button:hover {
+    transform: scale3d(1.05, 1.05, 1.05);
 }
 
 .header-button-left {
@@ -420,4 +438,51 @@ a {
 
 .footer-link:hover path {
     fill: var(--gray);
+}
+
+/* resume */
+
+.section-resume {
+    background: url("img/ResumeBG\ 1.png") no-repeat center;
+    background-size: cover;
+    height: 82.9vh;
+}
+
+.resume-title-block {
+    padding-top: 200px;
+}
+
+.resume-title {
+    color: white;
+    margin-bottom: 60px;
+}
+
+.resume-arrows {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.resume-arrow {
+    display: inline-block;
+    max-width: 100px;
+}
+
+.resume-arrow:nth-child(2) {
+    opacity: .75;
+}
+
+.resume-arrow:nth-child(3) {
+    opacity: .5;
+}
+
+.resume-arrow:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.resume-button-download {
+    font-size: 36px;
+    line-height: 50px;
+    padding: 20px 110px;
 }
