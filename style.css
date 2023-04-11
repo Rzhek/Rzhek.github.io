@@ -40,7 +40,7 @@ a {
 }
 
 .main {
-    min-height: 82.25vh;
+    min-height: 82.9vh;
 }
 
 .section {
@@ -68,6 +68,7 @@ a {
     border-radius: 15px;
     text-decoration: none;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 .btn_orange {
@@ -93,7 +94,7 @@ a {
 }
 
 .page-title {
-    font-size: 72px;
+    font-size: 60px;
     line-height: 120px;
     font-weight: 600;
     text-align: center;
@@ -497,10 +498,6 @@ a {
 
 /* Projects */
 
-.projects-title {
-    font-size: 60px;
-}
-
 .projects-link {
     font-size: inherit;
     font-weight: inherit;
@@ -568,4 +565,60 @@ a {
     line-height: 1em;
     font-weight: 500;
     width: 100%;
+}
+
+/* Contact */
+
+.contact-title {
+    line-height: 1em;
+    padding: 35px 0 20px 0;
+}
+
+.contact-form {
+    margin-top: 70px;
+    display: block;
+    width: 100%;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.input-name {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.input-item input {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 32px;
+    width: 500px;
+    border-radius: 5px;
+    border-color: var(--gray)
+}
+
+.contact-text {
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    resize: none;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    padding: 30px 20px;
+}
+
+.contact-button {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1em;
+    width: 400px;
+    padding: 26px 0;
 }
