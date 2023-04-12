@@ -67,7 +67,9 @@ a {
     line-height: 1em;
     border-radius: 15px;
     text-decoration: none;
-    transition: .3s ease-in-out;
+    transition-property: color, transform;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
     cursor: pointer;
 }
 
@@ -158,7 +160,7 @@ a {
 .nav-elem {
     margin-right: 50px;
     display: inline-block;
-    transition: .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .nav-elem_active {
@@ -194,6 +196,7 @@ a {
     font-size: None;
     font-size: 0px;
     margin-bottom: 7px;
+    /* transition: .2s ease-in; */
 }
 
 /* Header */
@@ -330,7 +333,7 @@ a {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     width: 100%;
     border-radius: 25px;
-    transition: .3s ease-in-out;
+    transition: transform .3s ease-in-out;
 }
 
 .activity-block-img img:hover {
@@ -419,7 +422,7 @@ a {
     color: white;
     display: inline-block;
     margin-right: 30px;
-    transition: .3s ease-in-out;
+    transition: color .3s ease-in-out;
 }
 
 .footer-email:hover {
@@ -442,7 +445,7 @@ a {
 
 .footer-links path {
     fill: white;
-    transition: .3s ease-in-out;
+    transition: fill .3s ease-in-out;
 }
 
 .footer-link:hover path {
@@ -476,14 +479,8 @@ a {
 .resume-arrow {
     display: inline-block;
     max-width: 100px;
-}
-
-.resume-arrow:nth-child(2) {
-    opacity: .75;
-}
-
-.resume-arrow:nth-child(3) {
-    opacity: .5;
+    opacity: 0;
+    transition: opacity .2s ease-in;
 }
 
 .resume-arrow:not(:last-child) {
@@ -521,7 +518,7 @@ a {
     /* border: 4px solid rgb(252, 172, 115); */
     margin-bottom: 50px;
     box-shadow: rgba(252, 172, 115, 0.5) 0px 1px 2px 0px, rgba(252, 172, 115, 0.5) 0px 1px 3px 1px;
-    transition: .3s ease-in-out;
+    transition: box-shadow .3s ease-in-out;
 }
 
 .project-item:nth-child(4n+1),
@@ -621,4 +618,9 @@ a {
     line-height: 1em;
     width: 400px;
     padding: 26px 0;
+}
+
+.contact-button:active {
+    background-color: #ff6a00;
+    cursor: not-allowed;
 }
