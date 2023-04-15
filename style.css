@@ -67,7 +67,7 @@ a {
     line-height: 1em;
     border-radius: 15px;
     text-decoration: none;
-    transition-property: color, transform;
+    transition-property: color transform;
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
     cursor: pointer;
@@ -121,6 +121,17 @@ a {
 
 .text_blue {
     color: var(--blue) !important;
+}
+
+.typed {
+    font: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.typed + .typed-cursor {
+    font-size: inherit;
+    font-size: 70%;
 }
 
 /* Menu */
@@ -274,6 +285,11 @@ a {
     line-height: 75px;
     font-weight: 700;
     margin-bottom: 30px;
+    min-height: 2.5em;
+}
+
+.header-right .typed-cursor {
+    font-size: 50px;
 }
 
 .header-profession {
@@ -496,6 +512,11 @@ a {
 .resume-title {
     color: white;
     margin-bottom: 60px;
+}
+
+.resume-title .typed-cursor {
+    font-size: 50px;
+    color: white;
 }
 
 .resume-arrows {
