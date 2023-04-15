@@ -3,16 +3,12 @@ import {publicKey, serviceId, templateId} from "./config.js";
 
 (function(){
     emailjs.init(publicKey);
-    // document.getElementById("contact-btn").onclick = function(){
-    //     return false;
-    // };
     window.sendMail = sendMail;
     
     
 })();
 
 function sendMail(){
-    console.log('1');
     var params = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,
@@ -20,14 +16,8 @@ function sendMail(){
         reply_to: document.getElementById("replyTo").value
     };
     
-    // alert(!params.name);
-    // console.log(params);
-    
-    console.log('2');
-        // emailjs.send(serviceId, templateId, params)
         emailjs.send(serviceId, templateId, params)
         .then( res => {
-    console.log('3');
 
             document.getElementById("name").value = "";
             document.getElementById("email").value = "";

@@ -1,4 +1,6 @@
 (function(){
+
+    window.toggleMenu = toggleMenu;
     
     if (window.location.pathname.endsWith("index.html")) {
         let transform;
@@ -34,4 +36,14 @@
     
 })()
 
+
+function toggleMenu() {
+    let navList = document.querySelector('.nav-list');
+
+    if (navList.classList.contains('active')) { 
+        navList.classList.remove('active');
+    } else {
+        navList.classList.add('active');
+    }
+}
 
