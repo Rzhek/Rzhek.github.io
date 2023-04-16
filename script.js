@@ -57,13 +57,15 @@ function indexPage() {
         typeSpeed: 70,
         backSpeed: 70,
         onComplete: (self) => {
-            document.querySelector('.header-right .typed-cursor').style.opacity = '0'
+            document.querySelector('.header-right .typed-cursor').style.display = 'none';
         },
     });
     
 }
 
 function resumePage() {
+
+    document.querySelector('.nav').classList.add('resume-page');
     
     // Arrows animation
     let arrows = document.getElementsByClassName("resume-arrow");
@@ -89,7 +91,7 @@ function resumePage() {
         strings: ['', 'Check out my resume'],
         typeSpeed: 70,
         onComplete: (self) => {
-            document.querySelector('.page-title-block .typed-cursor').style.opacity = '0'
+            document.querySelector('.page-title-block .typed-cursor').style.display = 'none';
         },
     });
 }
@@ -101,14 +103,14 @@ function projectsPage() {
         strings: ['^300My projects'],
         typeSpeed: 70,
         onComplete: (self) => {
-            document.querySelector('.projects-title .typed-cursor').style.opacity = '0';
+            document.querySelector('.projects-title .typed-cursor').style.display = 'none';
             
             // Typing subtitle
             var typedResume = new Typed('#projects-subtitle', {
-                strings: ['^300You can also see them on my <a target="_blank" href="https://github.com/Rzhek" class="projects-link">GitHub</a>'],
+                strings: ['^300You can also find them on my <a target="_blank" href="https://github.com/Rzhek" class="projects-link">GitHub</a>'],
                 typeSpeed: 40,
                 onComplete: (self) => {
-                    document.querySelector('.projects-subtitle .typed-cursor').style.opacity = '0'
+                    document.querySelector('.projects-subtitle .typed-cursor').display = 'none';
                 },
             });
         },
@@ -122,7 +124,7 @@ function contactPage() {
         strings: ['', 'Contact Me'],
         typeSpeed: 70,
         onComplete: (self) => {
-            document.querySelector('.page-title-block .typed-cursor').style.opacity = '0'
+            document.querySelector('.page-title-block .typed-cursor').style.display = 'none';
         },
     });
 }
