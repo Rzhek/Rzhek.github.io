@@ -1131,7 +1131,7 @@ a {
         border-bottom: none;
     }
     
-    .resume-title {
+    .projects-title {
         font-size: 50px;
         line-height: 75px;
     }
@@ -1145,6 +1145,24 @@ a {
         padding: 18px 90px;
     }
     
+    /* Projects Page */
+
+    .page-subtitle {
+        font-size: 22px;
+    }
+
+    .project-name {
+        font-size: 26px;
+    }
+
+    .project-description {
+        font-size: 18px;
+    }
+
+    .projects-new {
+        font-size: 28px;
+    }
+
 }
 
 @media screen and (max-width: 720px) {
@@ -1244,6 +1262,20 @@ a {
     .certification-text {
         display: none;
     }
+
+    /* Projects Page */
+    
+    .projects-wrapper {
+        flex-direction: column;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+
+    .projects-title {
+        text-align: center;
+    }
     
 }
 
@@ -1326,6 +1358,24 @@ a {
     
     .resume-title-block {
         padding: 100px 0;
+    }
+
+    /* Projects Page */
+
+    .page-subtitle {
+        font-size: 20px;
+    }
+
+    .page-title-line {
+        width: 50%;
+    }
+
+    .projects-wrapper {
+        margin-bottom: 30px;
+    }
+
+    .project-item {
+        padding: 30px 20px;
     }
     
 }

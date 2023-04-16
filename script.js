@@ -110,7 +110,7 @@ function projectsPage() {
                 strings: ['^300You can also find them on my <a target="_blank" href="https://github.com/Rzhek" class="projects-link">GitHub</a>'],
                 typeSpeed: 40,
                 onComplete: (self) => {
-                    document.querySelector('.projects-subtitle .typed-cursor').display = 'none';
+                    document.querySelector('.projects-subtitle .typed-cursor').style.display = 'none';
                 },
             });
         },
