@@ -3,6 +3,25 @@
     
     window.toggleMenu = toggleMenu;
     
+    // Adjusting menu for mobile devices
+    if (window.innerWidth < 875) {
+        let navList = document.querySelector('.nav-list.active')
+        let menuIconElems = document.querySelectorAll('.menu-icon-elem');
+        
+        navList.style.display = "none";
+        menuIconElems.forEach(function(self) {
+            self.style.transitionDuration = '0s';
+        })
+        navList.classList.remove('active');
+        setTimeout(function() {
+            navList.style.display = "flex";
+            menuIconElems.forEach(function(self) {
+                self.style.transitionDuration = '.5s';
+            })
+        }, 300)
+        
+    }
+    
     if (window.location.pathname.endsWith("index.html")) {
         indexPage();
     } else if (window.location.pathname.endsWith("resume.html")) {
@@ -24,10 +43,12 @@ function indexPage() {
     let icons = document.getElementsByClassName("header-icon");
     
     window.addEventListener('mousemove', (event) => {
-        transform = {x: (event.clientX / window.innerWidth * 100 - 50) / decrease, y: (event.clientY / window.innerHeight * 100 - 50) / decrease};
-        Array.from(icons).forEach(element => {
-            element.style.transform = `translate(${transform.x}px, ${transform.y}px)`;
-        });
+        if (window.innerWidth > 1024) {
+            transform = {x: (event.clientX / window.innerWidth * 100 - 50) / decrease, y: (event.clientY / window.innerHeight * 100 - 50) / decrease};
+            Array.from(icons).forEach(element => {
+                element.style.transform = `translate(${transform.x}px, ${transform.y}px)`;
+            });
+        }
     });
     
     // Typing title
@@ -74,14 +95,14 @@ function resumePage() {
 }
 
 function projectsPage() {
-
+    
     // Typing title
     var typedResume = new Typed('#projects-title', {
         strings: ['^300My projects'],
         typeSpeed: 70,
         onComplete: (self) => {
             document.querySelector('.projects-title .typed-cursor').style.opacity = '0';
-
+            
             // Typing subtitle
             var typedResume = new Typed('#projects-subtitle', {
                 strings: ['^300You can also see them on my <a target="_blank" href="https://github.com/Rzhek" class="projects-link">GitHub</a>'],
@@ -95,7 +116,7 @@ function projectsPage() {
 }
 
 function contactPage() {
-
+    
     // Typing title
     var typedResume = new Typed('#contact-title', {
         strings: ['', 'Contact Me'],

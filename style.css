@@ -71,6 +71,7 @@ a {
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
     cursor: pointer;
+    align-self: center;
 }
 
 .btn_orange {
@@ -191,7 +192,7 @@ a {
 
 .nav-list.active + .menu-icon .menu-icon-elem:nth-child(3) {
     transform: rotateZ(-45deg) translate(9px, -15px);
-
+    
 }
 
 .nav-elem {
@@ -234,7 +235,7 @@ a {
     font-size: 0px;
     margin-bottom: 7px;
     transition: transform .5s ease-in-out, opacity .5s ease-in-out, background-color .5s ease-in-out;
-
+    
 }
 
 /* Header */
@@ -288,9 +289,9 @@ a {
     min-height: 2.5em;
 }
 
-.header-right .typed-cursor {
+/* .header-right .typed-cursor {
     font-size: 50px;
-}
+} */
 
 .header-profession {
     font-size: 30px;
@@ -391,8 +392,9 @@ a {
     padding-top: 20px;
 }
 
-.certification-wrapper {
+.certifications-wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .certification-block {
@@ -439,6 +441,7 @@ a {
 .certification-date {
     margin-top: 15px;
     font-style: italic;
+    color: var(--gray);
 }
 
 /* footer */
@@ -471,7 +474,7 @@ a {
 }
 
 .footer-email:hover {
-    color: var(--gray)
+    color: var(--blue)
 }
 
 .footer-links {
@@ -494,7 +497,7 @@ a {
 }
 
 .footer-link:hover path {
-    fill: var(--gray);
+    fill: var(--blue);
 }
 
 /* resume */
@@ -673,4 +676,635 @@ a {
 .contact-button:active {
     background-color: #ff6a00;
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 1750px) {
+    
+    .container {
+        max-width: 1400px;
+    }
+    
+    .header-right {
+        padding: 50px;
+    }
+    
+    .header-title {
+        font-size: 56px;
+        min-height: 2.8em;
+    }
+    
+    .header-profession {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    
+    .header-description {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .certification-img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+}
+
+@media screen and (max-width: 1450px) {
+    
+    .section {
+        padding-bottom: 60px;
+    }
+    
+    .container {
+        max-width: 1100px;
+    }
+    
+    .nav-link {
+        font-size: 22px;
+    }
+    
+    .header-wrapper {
+        align-items: center;
+    }
+    
+    .header-icon {
+        max-width: 55px;
+    }
+    
+    .header-icon-csharp {
+        top: 50px;
+        right: 100px;
+    }
+    
+    .header-icon-js {
+        top: 200px;
+        left: 30px;
+    }
+    
+    .header-icon-python {
+        bottom: 120px;
+        right: 55px;
+    }
+    
+    .header-right {
+        padding: 30px;
+    }
+    
+    .header-title {
+        font-size: 46px;
+        line-height: 1.4em;
+    }
+    
+    .header-profession {
+        font-size: 24px;
+    }
+    
+    .header-button {
+        padding: 20px 10px;
+        font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 40px;
+    }
+    
+    .about-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .activity-title {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+    
+    .activity-block-text {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .activity-block-left.activity-block-text {
+        padding-right: 30px;
+    }
+    
+    .activity-block-right.activity-block-text {
+        padding-left: 30px;
+    }
+    
+    .certifications-wrapper {
+        flex-wrap: wrap;
+    }
+    
+    .certification-block {
+        width: 50%;
+        align-items: center;
+        padding: 15px;
+        border: none !important;
+    }
+    
+    .certification-block:not(:nth-child(2n)) {
+        border-right: 1px solid var(--gray) !important;
+    }
+    
+    .certification-block:not(:nth-last-child(-n+2)) {
+        border-bottom: 1px solid var(--gray) !important;
+    }
+    
+    .footer-left-copyright,
+    .footer-email {
+        font-size: 20px;
+    }
+    
+    .footer-links-svg {
+        width: 50px;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    
+    .container {
+        width: 950px;
+    }
+    
+    .header-icon-csharp {
+        top: 40px;
+    }
+    
+    .header-icon-js {
+        left: 20px;
+    }
+    
+    .header-icon-python {
+        bottom: 80px;
+        right: 50px;
+    }
+    
+    .header-title {
+        font-size: 38px;
+        min-height: 1em;
+        line-height: 1em;
+        margin-bottom: 20px;
+    }
+    
+    .header-profession {
+        font-size: 20px;
+    }
+    
+    .header-description {
+        font-size: 18px;
+        line-height: 32px;
+    }
+    
+    .header-button {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .header-button-left {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .container {
+        width: 850px;
+    }
+    
+    .nav-elem {
+        margin-right: 40px;
+    }
+    
+    .nav-link {
+        font-size: 18px;
+    }
+    
+    .menu-icon {
+        height: 37px;
+        width: 50px;
+    }
+    
+    .menu-icon-elem {
+        height: 6px;
+    }
+    
+    .nav-list.active + .menu-icon .menu-icon-elem:nth-child(1) {
+        transform: rotateZ(45deg) translate(0px, 18px);
+    }
+    
+    .nav-list.active + .menu-icon .menu-icon-elem:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-list.active + .menu-icon .menu-icon-elem:nth-child(3) {
+        transform: rotateZ(-45deg) translate(0px, -18px);
+        
+    }
+    
+    .header-left-img {
+        border-radius: 15px;
+    }
+    
+    .header-icon {
+        max-width: 45px;
+    }
+    
+    .header-icon-csharp {
+        right: 80px;
+    }
+    
+    .header-icon-js {
+        top: 180px;
+    }
+    
+    .header-icon-python {
+        bottom: 75px;
+        right: 40px;
+    }
+    
+    .header-title {
+        font-size: 33px;
+        margin-bottom: 10px;
+    }
+    
+    .header-profession {
+        margin-bottom: 15px;
+    }
+    
+    .header-description {
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .header-buttons {
+        flex-direction: column;
+    }
+    
+    .header-button {
+        max-width: 100%;
+        width: 100%;
+        font-weight: 600;
+    }
+    
+    .header-button-left {
+        margin-bottom: 15px;
+    }
+    
+    .activities-container .section-title {
+        margin-bottom: 60px;
+    }
+    
+    .activity-block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .activity-block_even {
+        flex-direction: column-reverse;
+    }
+    
+    .activity-block-text {
+        width: 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .activity-block-img {
+        width: 100%;
+    }
+    
+    .activity-description {
+        margin-bottom: 20px;
+    }
+    
+    .certification-block {
+        padding: 0;
+    }
+    
+    .certification-name {
+        font-size: 18px;
+    }
+    
+    .certification-date {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    
+    .certification-img {
+        max-width: 109px;
+    }
+    
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    
+    .footer-left {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    
+    .container {
+        max-width: 720px;
+        padding: 0 15px;
+    }
+
+    .nav {
+        position: relative;
+    }
+        
+    .nav-list {
+        position: absolute;
+        top: 80px;
+        background-color: var(--dark-blue);
+        height: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        transition: height .5s linear, padding .5s linear;
+        z-index: 10;
+    }
+    
+    .nav-list.active {
+        height: 192px;
+        padding: 20px 30px;
+    }
+
+    .nav-elem {
+        color: white;
+        margin-right: 0;
+        font-size: 20px;
+    }
+    
+    .nav-elem:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .nav-elem_active {
+        color: var(--orange);
+    }
+    
+    .header-icon-csharp {
+        right: 60px;
+        top: 25px;
+    }
+    
+    .header-icon-js {
+        top: 140px;
+    }
+    
+    .header-icon-python {
+        bottom: 65px;
+        right: 30px;
+    }
+    
+    .header-title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .header-profession {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .header-button {
+        font-size: 16px;
+        padding: 15px 10px;
+        width: 80%;
+    }
+    
+    .section-title {
+        font-size: 26px;
+    }
+    
+    .about-text {
+        font-size: 16px;
+    }
+    
+    .activity-block:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    
+    .activity-title {
+        font-size: 22px;
+    }
+    
+    .activity-description {
+        font-size: 16px;
+    }
+    
+    .certification-inner-block {
+        justify-content: flex-start;
+    }
+    
+    .certification-name {
+        display: block;
+        font-size: 16px;
+    }
+    
+    .certification-date {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    
+    .container {
+        width: auto;
+    }
+    
+    .mainlogo {
+        font-size: 30px;
+        transform: translateY(-5px);
+    }
+    
+    .nav-elem {
+        font-size: 16px;
+        margin-right: 30px;
+    }
+    
+    .header-wrapper {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+    }
+    
+    .header-left {
+        max-width: 100%;
+    }
+    
+    .header-right {
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .header-title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .header-profession {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    
+    .header-icon {
+        max-width: 9.5%;
+    }
+    
+    .header-icon-csharp {
+        top: 40px;
+    }
+    
+    .header-icon-js {
+        left: 20px;
+        top: 200px;
+    }
+    
+    .header-icon-python {
+        bottom: 80px;
+        right: 50px;
+    }
+    
+    .header-buttons {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .header-button {
+        max-width: unset;
+        width: unset;
+        margin: 0;
+    }
+    
+    .section {
+        padding-bottom: 45px;
+    }
+    
+    .certifications-wrapper {
+        justify-content: space-around;
+    }
+    
+    .certification-block:nth-child(n) {
+        border: none !important;
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+    
+    .certification-inner-block {
+        padding: 0 10px 0 0;
+    }
+    
+    .certification-img {
+        max-width: 100%;
+    }
+    
+    .certification-text {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 525px) {
+    
+    .mainlogo {
+        font-size: 25px;
+    }
+    
+    .nav-link {
+        font-size: 16px;
+    }
+    
+    .nav-elem {
+        margin-right: 20px;
+        
+    }
+    
+    .menu-icon {
+        height: 31px;
+        width: 45px;
+    }
+    
+    .menu-icon-elem {
+        height: 5px;
+    }
+    
+    
+    .nav-list.active + .menu-icon .menu-icon-elem:nth-child(3) {
+        transform: rotateZ(-45deg) translate(-1px, -18px);
+    }
+    
+    .footer-right {
+        flex-direction: column;
+    }
+    
+    .footer-email {
+        margin-bottom: 20px;
+    }
+
+    .about-text {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .activity-description {
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+    .footer-left-copyright {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .footer-email {
+        font-size: 18px;
+        margin-right: 0;
+    }
+
+    .footer-links-svg {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+
+    .header-icon-js {
+        top: 165px;
+    }
+
+    .header-profession {
+        margin: 0 auto;
+        max-width: 200px;
+        margin-bottom: 10px;
+        line-height: 30px;
+    }
+    
+    .activities-container .section-title {
+        margin-bottom: 35px;
+    }
+
+    .certification-block {
+        width: 110px;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+    }
+
+    .header-button {
+        width: 80%;
+    }
+
+    .header-button-left {
+        margin-bottom: 15px;
+    }
+
 }
