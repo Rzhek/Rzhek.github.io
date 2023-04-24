@@ -52,19 +52,21 @@ function indexPage() {
     });
     
     // Typing title
-    var typedIndex = new Typed('#header-typed', {
-        strings: ['Hello!', 'Hi!^1000 I\'m Vlad Kurgankin'],
-        typeSpeed: 70,
-        backSpeed: 70,
-        onComplete: (self) => {
-            document.querySelector('.header-right .typed-cursor').style.display = 'none';
-        },
-    });
+    setTimeout(() => {
+        var typedIndex = new Typed('#header-typed', {
+            strings: ['Hello!', 'Hi!^1000 I\'m Vlad Kurgankin'],
+            typeSpeed: 70,
+            backSpeed: 70,
+            onComplete: (self) => {
+                document.querySelector('.header-right .typed-cursor').style.display = 'none';
+            },
+        });
+    }, 100)
     
 }
 
 function resumePage() {
-
+    
     document.querySelector('.nav').classList.add('resume-page');
     
     // Arrows animation
