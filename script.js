@@ -22,7 +22,7 @@
         
     }
     
-    if (window.location.pathname.endsWith("index.html")) {
+    if (window.location.pathname.endsWith("index.html") || (window.location.pathname.endsWith('/'))) {
         indexPage();
     } else if (window.location.pathname.endsWith("resume.html")) {
         resumePage();
@@ -52,16 +52,14 @@ function indexPage() {
     });
     
     // Typing title
-    setTimeout(() => {
-        var typedIndex = new Typed('#header-typed', {
-            strings: ['Hello!', 'Hi!^1000 I\'m Vlad Kurgankin'],
-            typeSpeed: 70,
-            backSpeed: 70,
-            onComplete: (self) => {
-                document.querySelector('.header-right .typed-cursor').style.display = 'none';
-            },
-        });
-    }, 100)
+    var typedIndex = new Typed('#header-typed', {
+        strings: ['Hello!', 'Hi!^1000 I\'m Vlad Kurgankin'],
+        typeSpeed: 70,
+        backSpeed: 70,
+        onComplete: (self) => {
+            document.querySelector('.header-right .typed-cursor').style.display = 'none';
+        },
+    });
     
 }
 
