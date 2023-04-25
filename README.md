@@ -1,7 +1,7 @@
 # Personal Resume Website
 
 
-![alt-text](img/preview.gif 'preview')
+![alt-text](img/Preview.gif 'preview')
 
 This is my own personal resume website written in HTML, CSS, and JavaScript.
 
