@@ -21,8 +21,11 @@
         }, 300)
         
     }
-    
-    if (window.location.pathname.endsWith("index.html") || (window.location.pathname.endsWith('/'))) {
+    console.log(window.location.pathname)
+    if (window.location.pathname.endsWith("index.html") || 
+    (window.location.pathname.endsWith('/')) || 
+    (window.location.hostname.endsWith('rzhek.github.io'))) {
+        print('executes')
         indexPage();
     } else if (window.location.pathname.endsWith("resume.html")) {
         resumePage();
