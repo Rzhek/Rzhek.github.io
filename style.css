@@ -7,6 +7,18 @@
     --dark-blue: #30323E
 }
 
+/* Animations */
+
+@keyframes icon_idle {
+    from, to {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30%);
+    }
+}
+
 /* Common Styles */
 
 * {
@@ -259,6 +271,7 @@ a {
     position: absolute;
     pointer-events: none;
     filter: drop-shadow(5px 5px 5px #222);
+    animation: icon_idle infinite 2s ease-in-out;
 }
 
 .header-icon-csharp {
@@ -269,11 +282,15 @@ a {
 .header-icon-js {
     top: 260px;
     left: 40px;
+    animation-delay: .1s; 
+    animation-duration: 2.1s;
 }
 
 .header-icon-python {
     bottom: 143px;
     right: 50px;
+    animation-delay: .2s;
+    animation-duration: 1.2;
 }
 
 .header-right {

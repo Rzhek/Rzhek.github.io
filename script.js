@@ -38,19 +38,19 @@
 
 function indexPage() {
     
-    // Moving programming language icons
-    let transform;
-    let decrease = 4;
-    let icons = document.getElementsByClassName("header-icon");
+    // // Moving programming language icons
+    // let transform;
+    // let decrease = 4;
+    // let icons = document.getElementsByClassName("header-icon");
     
-    window.addEventListener('mousemove', (event) => {
-        if (window.innerWidth > 1024) {
-            transform = {x: (event.clientX / window.innerWidth * 100 - 50) / decrease, y: (event.clientY / window.innerHeight * 100 - 50) / decrease};
-            Array.from(icons).forEach(element => {
-                element.style.transform = `translate(${transform.x}px, ${transform.y}px)`;
-            });
-        }
-    });
+    // window.addEventListener('mousemove', (event) => {
+    //     if (window.innerWidth > 1024) {
+    //         transform = {x: (event.clientX / window.innerWidth * 100 - 50) / decrease, y: (event.clientY / window.innerHeight * 100 - 50) / decrease};
+    //         Array.from(icons).forEach(element => {
+    //             element.style.transform = `translate(${transform.x}px, ${transform.y}px)`;
+    //         });
+    //     }
+    // });
     
     // Typing title
     var typedIndex = new Typed('#header-typed', {
