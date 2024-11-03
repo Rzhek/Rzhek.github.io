@@ -27,7 +27,7 @@
                         <li class="nav-elem nav-elem_active"><a class="nav-link" href="/">Home</a> </li>
                         <li class="nav-elem"><a class="nav-link" href="resume.html">Resume</a> </li>
                         <li class="nav-elem"><a class="nav-link" href="projects.html">Projects</a> </li>
-                        <li class="nav-elem"><a class="nav-link" href="contact.html">Contact</a> </li>
+                        <!-- <li class="nav-elem"><a class="nav-link" href="contact.html">Contact</a> </li> -->
                     </ul>
                     <div class="menu-icon" onclick="toggleMenu()">
                         <span class="menu-icon-elem"></span>
@@ -45,7 +45,7 @@
                 <div class="header-wrapper">
                     <div class="header-left">
                         <img src="img/MainPicture.png" class="header-left-img" alt="MainPic">
-                        <img src="img/CSharp.png" alt="C#" class="header-icon header-icon-csharp">
+                        <img src="img/cpp.png" alt="C++" class="header-icon header-icon-cpp">
                         <img src="img/JS.png" alt="JS" class="header-icon header-icon-js">
                         <img src="img/Python.png" alt="Python" class="header-icon header-icon-python">
                     </div>
@@ -53,11 +53,11 @@
                         <h1 class="header-title">
                             <span class="typed" id="header-typed"></span>
                         </h1>
-                        <div class="header-profession">Software Engineer / Web Developer</div>
-                        <p class="header-description">Highly motivated and enthusiastic college freshman with more than eight years of programming background looking for internship opportunities related to computer science and IT</p>
+                        <div class="header-profession">Software Engineer / Full Stack Developer</div>
+                        <p class="header-description">Highly motivated and enthusiastic college student with more than nine years of programming background looking for internship opportunities related to computer science and IT</p>
                         <div class="header-buttons">
                             <a href="resume.html" class="btn btn_orange header-button header-button-left">Check out my resume</a>
-                            <a href="contact.html" class="btn btn_blue header-button header-button-right">Hire me</a>
+                            <a href="https://www.linkedin.com/in/vlad-kurgankin-07345b292/" target="_blank" class="btn btn_blue header-button header-button-right">Hire me</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +67,7 @@
         <section class="section section-about">
             <div class="container about-container">
                 <h3 class="section-title">About me</h3>
-                <p class="about-text">My name is Vlad, and I am a 19-year-old University of Central Florida Freshman studying Computer Science. Besides studying CS academically, I want to test my skills and get real-world experience working in that industry. My programming journey began long ago: when I was about 11 years old. I discovered how to make websites using HTML, CSS, and JavaScript. Since then, I've been learning many other programming languages: PHP, Java, and C#, but Python has become my favorite. I like how it doesn't require complicated, unnecessary syntax but simultaneously provides very powerful tools and can be used almost everywhere: Web, Data Science, AI, and Desktop Applications. Besides that, I'm still pretty familiar with other programming languages I learned before and can quickly get used to coding in them. Recently, I started to explore the field of Web Development using JavaScript, and especially React Library. This summer, I coded in JavaScript with React and C# with .Net Core as part of my summer 2023 internship, which you can learn more about below.</p>
+                <p class="about-text">My name is Vlad, and I am a <span id="auto-age"></span>-year-old University of Central Florida student studying Computer Science. Besides studying CS academically, I want to test my skills and get real-world experience working in that industry. My programming journey began long ago: when I was about 11 years old. I discovered how to make websites using HTML, CSS, and JavaScript. Since then, I've learned many other programming languages, such as, Python, C, C++, PHP, Java, and C#. Recently I've been focusing on competetive programming and solving coding problems in C++, applying my knowledge in Data Structures and Algorithms. Also, I try to develop in different directions as well: I've worked on various projects that you can find on my <a href="https://github.com/Rzhek" target="_blank" class="github-link">github</a> or <a href="projects.html" class="about-projects-link">projects page</a></p>
             </div>
         </section>
         
@@ -75,49 +75,58 @@
             <div class="container activities-container">
                 <h3 class="section-title">Activities</h3>
                 <div class="activities-wrapper">
-                    <div class="activity-block activity-block_odd">
+                    <div class="activity-block activity-block_even">
                         <div class="activity-block-left activity-block-img">
-                            <img style="height: 100%;" src="img/internship2.png" alt="UCF IMG">
+                            <img style="height: 100%;" src="img/icpc.jpg" alt="UCF IMG">
                         </div>
                         <div class="activity-block-right activity-block-text">
+                            <h4 class="activity-title">ICPC Programming Team of University of Central Florida</h4>
+                            <p class="activity-description">I'm a member of UCF Programming Team, where I learn about advanced Algorithms and Data Structures and how to apply various techniques to solve challenging problems. When my team competed in 2023 SouthEast Regional ICPC Contest, we placed 2nd</p>
+                        </div>
+                    </div>
+                    <div class="activity-block activity-block_even">
+                        <div class="activity-block-left activity-block-text">
                             <h4 class="activity-title">Palm Beach School District IT Internship</h4>
                             <p class="activity-description">I worked as a full-stack developer on the Palm Beach School District's “Battle of the Books” project during my summer 2023 Internship. I was responsible for both the front-end and back-end parts of the web application by using React.js and .Net Core.</p>
                         </div>
+                        <div class="activity-block-right activity-block-img">
+                            <img style="height: 100%;" src="img/internship2.png" alt="UCF IMG">
+                        </div>
                     </div>
                     <div class="activity-block activity-block_odd">
-                        <div class="activity-block-left activity-block-text">
+                        <div class="activity-block-left activity-block-img">
+                            <img src="img/UCF.png" alt="UCF IMG">
+                        </div>
+                        <div class="activity-block-right activity-block-text">
                             <h4 class="activity-title">UCF High School Programming Tournament</h4>
                             <p class="activity-description">I participated in the UCF programming competition, where my team had to solve different programming problems. It was a great experience to challenge myself to solve complicated problems and try to do it as fast as possible. It helped me to develop the ability to seek the most efficient approaches to problem-solving and teamwork skills.</p>
                         </div>
-                        <div class="activity-block-right activity-block-img">
-                            <img src="img/UCF.png" alt="UCF IMG">
-                        </div>
                     </div>
                     <div class="activity-block activity-block_even">
-                        <div class="activity-block-left activity-block-img">
-                            <img src="img/MARS.png" alt="MARS IMG">
-                        </div>
-                        <div class="activity-block-right activity-block-text">
+                        <div class="activity-block-left activity-block-text">
                             <h4 class="activity-title">FIRST Robotics Competition</h4>
                             <p class="activity-description">I am a member of the robotics team called 1523 M.A.R.S. (Mega Awesome Robotic Systems). Our team built a robot for the First Robotics Competition. In 2023, we participated in South Florida Regional and Orlando Regional with our new robot, “Ingenuity.” I am in the programming team, so I am responsible for writing the code for our robot, so the driving team can control it and even drive in autonomous mode by itself.</p>
                         </div>
+                        <div class="activity-block-right activity-block-img">
+                            <img src="img/MARS.png" alt="MARS IMG">
+                        </div>
                     </div>
                     <div class="activity-block activity-block_odd">
-                        <div class="activity-block-left activity-block-text">
+                        <div class="activity-block-left activity-block-img">
+                            <img src="img/CyberPatriot.png" alt="CeberPatriot IMG">
+                        </div>
+                        <div class="activity-block-right activity-block-text">
                             <h4 class="activity-title">AFA CyberPatriot National Competition</h4>
                             <p class="activity-description">Our high school cybersecurity team competed in the CyberPatriot competition, where we had to apply cybersecurity methods to protect the system on the virtual machine from all threats. Each round consisted of many parts, and I was responsible for Windows Server and Cisco Packet Tracer portions.</p>
                         </div>
-                        <div class="activity-block-right activity-block-img">
-                            <img src="img/CyberPatriot.png" alt="CeberPatriot IMG">
-                        </div>
                     </div>
                     <div class="activity-block activity-block_even">
-                        <div class="activity-block-left activity-block-img">
-                            <img src="img/CSHS.jpg" alt="CSHS IMG">
-                        </div>
-                        <div class="activity-block-right activity-block-text">
+                        <div class="activity-block-left activity-block-text">
                             <h4 class="activity-title">Computer Science Honor Society</h4>
                             <p class="activity-description">I am a member of my high school's Computer Science Honor Society, a place for everyone interested in computer science. We participate in different activities, including programming and cybersecurity competitions. In 2022, I became the leader of our programming team and was assisting other members on how the competition was going to take place and how they could prepare for competitive programming</p>
+                        </div>
+                        <div class="activity-block-right activity-block-img">
+                            <img src="img/CSHS.jpg" alt="CSHS IMG">
                         </div>
                     </div>
                 </div>
@@ -314,13 +323,18 @@
         <div class="container footer-container">
             <div class="footer-wrapper">
                 <div class="footer-left">
-                    <p class="footer-left-copyright">©2023 Vlad Kurgankin's personal resume</p>
+                    <p class="footer-left-copyright">©2024 Vlad Kurgankin's personal resume</p>
                 </div>
                 <div class="footer-right">
                     <a href="contact.html" class="footer-email">vladkurgankin2004@gmail.com</a>
                     <ul class="footer-links">
-                        <li><a target="_blank" class="footer-link" href="https://github.com/Rzhek">
-                            <svg class="footer-links-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 291.32 291.32" xml:space="preserve">
+                        <li><a target="_blank" class="footer-link" href="https://www.linkedin.com/in/vlad-kurgankin-07345b292/">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" viewBox="0 0 50 50">
+                                <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"></path>
+                            </svg>
+                        </a></li>
+                        <li style="margin-right: 0px;"><a target="_blank" class="footer-link" href="https://github.com/Rzhek">
+                            <svg class="footer-links-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 291.32" xml:space="preserve">
                                 <path class="footer-github-path" d="M145.66,0C65.219,0,0,65.219,0,145.66c0,80.45,65.219,145.66,145.66,145.66
                                 s145.66-65.21,145.66-145.66C291.319,65.219,226.1,0,145.66,0z M186.462,256.625c-0.838-11.398-1.775-25.518-1.83-31.235
                                 c-0.364-4.388-0.838-15.549-11.434-22.677c42.068-3.523,62.087-26.774,63.526-57.499c1.202-17.497-5.754-32.883-18.107-45.3

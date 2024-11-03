@@ -1,3 +1,9 @@
+const getAge = (year, month, day) => {
+    const bd = new Date(year, month - 1, day);
+    const now = new Date();
+    const baseAge = now.getFullYear() - bd.getFullYear() - 1;
+    return baseAge + (now.getMonth() > bd.getMonth() || now.getMonth() == bd.getMonth() && now.getDate() >= bd.getDate());
+} 
 
 (function(){
     
@@ -25,6 +31,9 @@
     if (window.location.pathname.endsWith("index.html") ||
         window.location.pathname.endsWith('/')) {
         indexPage();
+        
+        let ageBlock = document.querySelector("#auto-age");
+        ageBlock.innerHTML = getAge(2004, 7, 4);
     } else if (window.location.pathname.endsWith("resume.html")) {
         resumePage();
     } else if (window.location.pathname.endsWith("projects.html")) {
@@ -34,6 +43,7 @@
     }
     
 })()
+
 
 
 function indexPage() {
@@ -139,3 +149,5 @@ function toggleMenu() {
         navList.classList.add('active');
     }
 }
+
+
